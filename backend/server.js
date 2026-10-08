@@ -1,3 +1,4 @@
+
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -12,6 +13,15 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("To-Do backend is running!");
 });
+
+// Health check endpoint
+app.get("/api/health", (req, res) => {
+  res.status(200).json({
+    status: "OK",
+    message: "Backend server is running"
+  });
+});
+
 // Fetch all tasks
 app.get("/api/tasks", async (req, res) => {
   try {
@@ -110,6 +120,7 @@ app.delete("/api/tasks/:id", async (req, res) => {
     res.status(500).json({ message: "Failed to delete task" });
   }
 });
+
 const PORT = process.env.PORT || 5000;
 
 async function startServer() {
