@@ -1,16 +1,44 @@
-# React + Vite
+# MERN To-Do List — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the React frontend of a full-stack MERN To-Do List application. It provides a user-friendly interface for managing daily tasks.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- View all tasks
+- Add new tasks
+- Edit existing tasks
+- Mark tasks as completed or incomplete
+- Delete tasks
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- Vite
+- JavaScript
+- CSS
+- REST API
 
-## Expanding the ESLint configuration
+## Project Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Open the frontend folder in the terminal.
+2. Install dependencies:
+
+   `npm install`
+
+3. Start the development server:
+
+   `npm run dev`
+
+4. Open the local URL displayed in the terminal.
+
+## Backend Integration
+
+The frontend communicates with the Node.js and Express backend using REST APIs.
+
+The backend supports creating, retrieving, updating, and deleting tasks, with MongoDB storing the task data.
+
+Ensure the backend server is running before using the application.
+
+## Project Purpose
+
+This project demonstrates full-stack web development using MongoDB, Express.js, React.js, and Node.js.
