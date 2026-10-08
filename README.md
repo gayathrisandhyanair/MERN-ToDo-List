@@ -1,9 +1,9 @@
 # MERN To-Do List — Assignment 2
 
-## Student Details
+
 Name: Gayathri S Nair
 Roll Number: 31
-Course: Web Technology (23CSB40B)
+
 
 ## Description
 A full-stack To-Do List application built using MongoDB, Express,
